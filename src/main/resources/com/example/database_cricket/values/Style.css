@@ -1,0 +1,37 @@
+.search-button {
+    -fxbackground-color: #828282;
+    -fx-background-radius: 30;
+}
+
+.cancel-button {
+    -fx-background-color: #D32F2F;
+    -fx-background-radius: 30;
+}
+
+.chosen-player-card{
+    -fx-background-color: #828282;
+    -fx-background-radius: 20;
+}
+
+.login-card{
+    -fx-background-color: #828282;
+    -fx-background-radius: 20;
+}
+
+.transparent-background{
+    -fx-background-color: transparent;
+}
+
+.search-box{
+    -fx-background-color:#FFFFFF;
+    -fx-background-radius: 100;
+}
+
+.shadow{
+    -fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.1), 10.0 , 0.0 , 0.0 ,10.0);
+}
+
+.player-card{
+    -fx-background-color: rgba(12, 8, 8, 0.58);
+    -fx-background-radius: 100;
+}

@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.MainPage">
+   <children>
+      <ImageView fitHeight="290.0" fitWidth="1000.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../Images/gray.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="773.0" fitWidth="312.0" layoutY="-16.0" pickOnBounds="true" rotate="180.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../../../Images/Sidebar.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="clubname" fill="WHITE" layoutX="27.0" layoutY="51.3576171875" strokeType="OUTSIDE" strokeWidth="0.0" text="Royal Challengers Bangalore" textAlignment="CENTER" wrappingWidth="258.4" AnchorPane.leftAnchor="27.0" AnchorPane.rightAnchor="721.0" AnchorPane.topAnchor="25.0">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="30.0" />
+         </font>
+      </Text>
+      <Button layoutX="484.0" layoutY="29.0" mnemonicParsing="false" onAction="#homeclick" styleClass="shadow" stylesheets="@values/Style.css" text="HOME PAGE">
+         <font>
+            <Font name="ArtifaktElement-Heavy" size="21.0" />
+         </font>
+      </Button>
+      <Button layoutX="664.0" layoutY="29.0" mnemonicParsing="false" onAction="#marketclick" prefHeight="46.0" prefWidth="149.0" styleClass="shadow" stylesheets="@values/Style.css" text="MARKET">
+         <font>
+            <Font name="ArtifaktElement-Heavy" size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="add_player" layoutX="144.0" layoutY="145.0" mnemonicParsing="false" onAction="#addplayer" prefHeight="46.0" prefWidth="134.0" stylesheets="@values/Style.css" text="ADD PLAYER">
+         <font>
+            <Font name="MS Gothic" size="21.0" />
+         </font>
+         <styleClass>
+            <String fx:value="search-button" />
+            <String fx:value="shadow" />
+         </styleClass>
+      </Button>
+      <Button fx:id="Searchbutton" layoutX="23.0" layoutY="145.0" mnemonicParsing="false" onAction="#search" prefHeight="46.0" prefWidth="110.0" stylesheets="@values/Style.css" text="SEARCH">
+         <font>
+            <Font name="MS Gothic" size="21.0" />
+         </font>
+         <styleClass>
+            <String fx:value="search-button" />
+            <String fx:value="shadow" />
+         </styleClass>
+      </Button>
+      <Button fx:id="searchbyname" layoutX="36.0" layoutY="233.0" mnemonicParsing="false" onAction="#searchname" prefHeight="50.0" prefWidth="110.0" styleClass="search-button" stylesheets="@values/Style.css" text="Name">
+         <font>
+            <Font name="ArtifaktElement-Heavy" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="searchbycountry" layoutX="156.0" layoutY="233.0" mnemonicParsing="false" onAction="#searchcountry" prefHeight="50.0" prefWidth="110.0" styleClass="search-button" stylesheets="@values/Style.css" text="Country">
+         <font>
+            <Font name="ArtifaktElement-Heavy" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="searchcountrywise" layoutX="52.0" layoutY="361.0" mnemonicParsing="false" onAction="#countrywise" prefHeight="50.0" prefWidth="189.0" style="-fx-background-color: #EEEEE;" styleClass="search-button" stylesheets="@values/Style.css" text="Countrywise Player Count">
+         <font>
+            <Font name="ArtifaktElement-Heavy" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="searchbyposition" layoutX="36.0" layoutY="295.0" mnemonicParsing="false" onAction="#searchposition" prefHeight="50.0" prefWidth="110.0" styleClass="search-button" stylesheets="@values/Style.css" text="Position">
+         <font>
+            <Font name="ArtifaktElement-Heavy" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="searchbysalary" layoutX="156.0" layoutY="295.0" mnemonicParsing="false" onAction="#searchsalary" prefHeight="50.0" prefWidth="110.0" styleClass="search-button" stylesheets="@values/Style.css" text="Salary Range">
+         <font>
+            <Font name="ArtifaktElement-Heavy" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="maxheight" layoutX="51.0" layoutY="462.0" mnemonicParsing="false" onAction="#max_height" prefHeight="50.0" prefWidth="189.0" style="-fx-background-color: #EEEEE;" styleClass="search-button" stylesheets="@values/Style.css" text="Maximum Height">
+         <font>
+            <Font name="ArtifaktElement-Heavy" size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="maxage" layoutX="51.0" layoutY="520.0" mnemonicParsing="false" onAction="#max_age" prefHeight="50.0" prefWidth="189.0" style="-fx-background-color: #EEEEE;" styleClass="search-button" stylesheets="@values/Style.css" text="Maximum Age">
+         <font>
+            <Font name="ArtifaktElement-Heavy" size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="maxsalary" layoutX="52.0" layoutY="578.0" mnemonicParsing="false" onAction="#max_salary" prefHeight="50.0" prefWidth="189.0" style="-fx-background-color: #EEEEE;" styleClass="search-button" stylesheets="@values/Style.css" text="Maximum Salary">
+         <font>
+            <Font name="ArtifaktElement-Heavy" size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="totalsalary" layoutX="51.0" layoutY="635.0" mnemonicParsing="false" onAction="#total_salary" prefHeight="50.0" prefWidth="189.0" style="-fx-background-color: #EEEEE;" styleClass="search-button" stylesheets="@values/Style.css" text="Total Yearly Salary">
+         <font>
+            <Font name="ArtifaktElement-Heavy" size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="logout" layoutX="27.0" layoutY="704.0" mnemonicParsing="false" onAction="#loggingout" prefHeight="31.0" prefWidth="70.0" styleClass="cancel-button" stylesheets="@values/Style.css" text="Log out">
+         <font>
+            <Font name="Cooper Black" size="12.0" />
+         </font>
+      </Button>
+      <VBox fx:id="PlayerCard" layoutX="23.0" layoutY="265.0" prefHeight="354.0" prefWidth="266.0" stylesheets="@values/Style.css" AnchorPane.leftAnchor="28.8" AnchorPane.topAnchor="275.2">
+         <children>
+            <Text fx:id="card_name" strokeType="OUTSIDE" strokeWidth="0.0" text="Faf du Plessis,South Africa,40,1.78,Royal Challengers Bangalore,Batsman,18,17500000" wrappingWidth="246.63673400878906">
+               <font>
+                  <Font name="ArtifaktElement-Heavy" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="9.0" top="30.0" />
+               </VBox.margin>
+            </Text>
+         </children>
+         <styleClass>
+            <String fx:value="chosen-player-card" />
+            <String fx:value="shadow" />
+         </styleClass>
+      </VBox>
+      <VBox layoutX="311.0" layoutY="92.0" prefHeight="656.0" prefWidth="690.0">
+         <children>
+            <ScrollPane prefHeight="657.0" prefWidth="690.0" styleClass="transparent-background" stylesheets="@values/Style.css">
+               <content>
+                  <GridPane fx:id="grid" prefHeight="0.0" prefWidth="0.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                  </GridPane>
+               </content>
+            </ScrollPane>
+         </children>
+      </VBox>
+      <Button fx:id="cancelbutton" layoutX="285.0" layoutY="148.0" mnemonicParsing="false" onAction="#cancel_button" prefHeight="38.0" prefWidth="39.0" styleClass="cancel-button" stylesheets="@values/Style.css" text="X" textFill="WHITE" />
+      <HBox fx:id="seachingbar" layoutX="22.0" layoutY="144.0" prefHeight="50.0" prefWidth="259.0" stylesheets="@values/Style.css">
+         <children>
+            <TextField fx:id="search_name" prefHeight="67.0" prefWidth="186.0" promptText="Enter Name" styleClass="transparent-background" stylesheets="@values/Style.css">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+            <Button fx:id="searchbutton2" mnemonicParsing="false" onAction="#search_check" prefHeight="50.0" prefWidth="74.0" styleClass="search-button" stylesheets="@values/Style.css" text="Search">
+               <font>
+                  <Font name="Bell MT" size="16.0" />
+               </font>
+            </Button>
+         </children>
+         <styleClass>
+            <String fx:value="search-box" />
+            <String fx:value="shadow" />
+         </styleClass>
+      </HBox>
+      <Text fx:id="middletext" layoutX="364.0" layoutY="229.8251953125" strokeType="OUTSIDE" strokeWidth="0.0" text="Countrywise" textAlignment="CENTER" wrappingWidth="586.4033203125" AnchorPane.leftAnchor="364.0" AnchorPane.topAnchor="164.0">
+         <font>
+            <Font name="ArtifaktElement-Heavy" size="34.0" />
+         </font>
+      </Text>
+      <VBox fx:id="addplayercard" layoutX="28.8" layoutY="275.2" prefHeight="473.0" prefWidth="266.0" stylesheets="@values/Style.css" AnchorPane.leftAnchor="23.0" AnchorPane.topAnchor="182.0">
+         <styleClass>
+            <String fx:value="chosen-player-card" />
+            <String fx:value="shadow" />
+         </styleClass>
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Name :" wrappingWidth="83.83601379394531">
+               <font>
+                  <Font name="ArtifaktElement-Heavy" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="9.0" top="25.0" />
+               </VBox.margin>
+            </Text>
+            <TextField fx:id="add_name" prefHeight="13.0" prefWidth="169.0" promptText="Enter name" styleClass="search-box" stylesheets="@values/Style.css">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="7.0" right="7.0" />
+               </VBox.margin>
+            </TextField>
+            <Text layoutX="19.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Country :" wrappingWidth="83.83601379394531">
+               <font>
+                  <Font name="ArtifaktElement-Heavy" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="9.0" right="9.0" />
+               </VBox.margin>
+            </Text>
+            <TextField fx:id="add_country" layoutX="17.0" layoutY="76.0" prefHeight="13.0" prefWidth="169.0" promptText="Enter country" styleClass="search-box" stylesheets="@values/Style.css">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="7.0" right="7.0" />
+               </VBox.margin>
+            </TextField>
+            <Text layoutX="10.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Position :" wrappingWidth="96.63600158691406">
+               <font>
+                  <Font name="ArtifaktElement-Heavy" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="9.0" />
+               </VBox.margin>
+            </Text>
+            <TextField fx:id="add_position" layoutX="10.0" layoutY="128.0" prefHeight="13.0" prefWidth="169.0" promptText="Enter Position" styleClass="search-box" stylesheets="@values/Style.css">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="7.0" right="7.0" />
+               </VBox.margin>
+            </TextField>
+            <Text layoutX="10.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Age :" wrappingWidth="83.83601379394531">
+               <font>
+                  <Font name="ArtifaktElement-Heavy" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="9.0" />
+               </VBox.margin>
+            </Text>
+            <TextField fx:id="add_age" layoutX="10.0" layoutY="181.0" prefHeight="13.0" prefWidth="169.0" promptText="Enter Age" styleClass="search-box" stylesheets="@values/Style.css">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="7.0" right="7.0" />
+               </VBox.margin>
+            </TextField>
+            <Text layoutX="10.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Number :" wrappingWidth="100.63600158691406">
+               <font>
+                  <Font name="ArtifaktElement-Heavy" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="9.0" />
+               </VBox.margin>
+            </Text>
+            <TextField fx:id="add_number" layoutX="10.0" layoutY="234.0" prefHeight="13.0" prefWidth="169.0" promptText="Enter Number ( 0 if not applicable)" styleClass="search-box" stylesheets="@values/Style.css">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="7.0" right="7.0" />
+               </VBox.margin>
+            </TextField>
+            <Text layoutX="10.0" layoutY="280.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Salary :" wrappingWidth="83.83601379394531">
+               <font>
+                  <Font name="ArtifaktElement-Heavy" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="9.0" />
+               </VBox.margin>
+            </Text>
+            <TextField fx:id="add_salary" layoutX="10.0" layoutY="287.0" prefHeight="13.0" prefWidth="169.0" promptText="Enter Salary" styleClass="search-box" stylesheets="@values/Style.css">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="7.0" right="7.0" />
+               </VBox.margin>
+            </TextField>
+            <Text layoutX="10.0" layoutY="333.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Height :" wrappingWidth="83.83601379394531">
+               <font>
+                  <Font name="ArtifaktElement-Heavy" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="9.0" />
+               </VBox.margin>
+            </Text>
+            <TextField fx:id="add_height" layoutX="10.0" layoutY="340.0" prefHeight="13.0" prefWidth="169.0" promptText="Enter Height" styleClass="search-box" stylesheets="@values/Style.css">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="7.0" right="7.0" />
+               </VBox.margin>
+            </TextField>
+            <HBox prefHeight="48.0" prefWidth="246.0">
+               <children>
+                  <Button fx:id="new_add_button" mnemonicParsing="false" onAction="#new_add_player" prefHeight="26.0" prefWidth="110.0" styleClass="search-button" stylesheets="@values/Style.css" text="Add">
+                     <font>
+                        <Font name="ArtifaktElement-Heavy" size="21.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="newcancel" mnemonicParsing="false" onAction="#new_cancel" prefHeight="26.0" prefWidth="110.0" styleClass="cancel-button" stylesheets="@values/Style.css" text="Cancel">
+                     <font>
+                        <Font name="ArtifaktElement-Heavy" size="21.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="20.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
